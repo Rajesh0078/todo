@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(360deg,
+      rgba(29, 29, 212, 0.699),
+      rgba(236, 17, 17, 0.733));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 500px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.container .title {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.container span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .input {
+  display: flex;
+  align-items: center;
+  border-radius: 5rem;
+  background: #edeef0;
+}
+
+.container .input i {
+  padding-left: 1rem;
+}
+
+.container .input input {
+  background: transparent;
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+}
+
+.container .input button {
+  padding: 0.5rem 2.2rem;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  background: rgba(233, 164, 14, 0.877);
+}
+
+.container .list-container {
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+.container .list-container li {
+  margin-left: 1rem;
+  padding: 0.6rem 1rem;
+  position: relative;
+}
+
+.container .list-container li::before {
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.1rem solid black;
+}
+
+.container .list-container .checked::before {
+  background: url(./check-mark.png);
+  background-position: center;
+  background-size: contain;
+  border: none;
+  height: 18px;
+  width: 18px;
+}
